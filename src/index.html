@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
-    <meta
-      name="description"
-      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout</title>
   </head>
   <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
-    </div>
+    <form action="/create-checkout-session" method="POST">
+      <button type="submit">Checkout</button>
+    </form>
+    <form
+    <label for="frmNameCC">Name on card</label>
+<input name="ccname" id="frmNameCC" required placeholder="Full Name" autocomplete="cc-name">
+
+<label for="frmCCNum">Card Number</label>
+<input name="cardnumber" id="frmCCNum" required autocomplete="cc-number">
+
+<label for="frmCCCVC">CVC</label>
+<input name="cvc" id="frmCCCVC" required autocomplete="cc-csc">
+
+<label for="frmCCExp">Expiry</label>
+<input name="cc-exp" id="frmCCExp" required placeholder="MM-YYYY" autocomplete="cc-exp">
+    </form>
   </body>
 </html>
